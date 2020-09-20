@@ -1,0 +1,115 @@
+<view class="top_steps">
+	<van-steps steps="{{ steps }}" active="{{ active }}" active-color="#000000" />
+</view>
+<view style="height:66.8px"></view>
+<!--步骤一-->
+<van-transition show="{{ show_b }}" name="fade-right" custom-class="block" duration="{{entime}}">
+	<view class="b_contain">
+
+		<view class="b_top">
+			<view class="b_content">
+				<view class="b_place">
+					<view class="b_plecebox">
+						<input maxlength="50" placeholder="请输入您的每一物品名称,方便同学搜索，增加曝光率" value="{{good}}" bindinput="goodInput" />
+					</view>
+				</view>
+				<view class="b_notes">
+					<view class="b_text">
+						<textarea value="{{describe}}" bindinput="describeInput" maxlength="200" placeholder="请输入物品的详细描述"></textarea>
+						<view class="b_less">{{desc_counts}}/200</view>
+					</view>
+				</view>
+				<!-- </view> -->
+			</view>
+		</view>
+	</view>
+
+	<view class="pictures">
+		<view wx:key="index" class="img_item" wx:for="{{tempFilePaths}}" data-index="{{index}}">
+			<image mode="aspectFit" src="{{item}}" />
+			<van-icon bind:click="deletePic" data-index="{{index}}" name="close" />
+		</view>
+		<view bindtap="chooseImage" class="img_item upload-img" hidden="{{!selectPhoto}}">
+			<van-icon name="plus" />
+		</view>
+	</view>
+
+	<view class="b_ccontain">
+		<view class="b_card">
+			<view class="b_bar">
+				<view class="b_name">价格(元)</view>
+				<van-stepper value="{{price}}" integer bind:change="priceChange" min="1" max="10000" />
+			</view>
+			<view class="b_border"></view>
+			<view class="b_bar">
+				<view class="b_name">类别</view>
+				<radio-group class="kind-group" bindchange="kindChange">
+					<label class="b_radio" wx:for="{{kind}}" wx:key="id">
+						<radio color="#fbbd08" value="{{item.id}}" checked="{{item.check}}" />{{item.name}}
+					</label>
+				</radio-group>
+			</view>
+			<!--选择类别的时候-->
+			<block wx:if="{{chooseCollege}}">
+				<view class="b_border"></view>
+				<view class="b_bar">
+					<view class="b_name">选择用途</view>
+					<picker range="{{college}}" range-key="name" value="{{cids}}" bindchange="choCollege">
+						<view class="b_picker">
+							<block wx:if="{{cids!==-1}}">当前选择：{{college[cids].name}}</block>
+							<block wx:if="{{cids==-1}}">请选择用途类别</block>
+							<image class="right" src="/images/right.png" />
+						</view>
+					</picker>
+				</view>
+			</block>
+			<view class="b_border"></view>
+			<view class="b_bar">
+				<view class="name">取货方式</view>
+				<radio-group class="kind-group" bindchange="delChange">
+					<label class="b_radio" wx:for="{{delivery}}" wx:key="id">
+						<radio color="#fbbd08" value="{{item.id}}" checked="{{item.check}}" />{{item.name}}
+					</label>
+				</radio-group>
+			</view>
+			<block wx:if="{{chooseDelivery==0}}">
+				<view class="b_place">
+					<view class="b_plecebox">
+						<input maxlength="20" placeholder="请输入您的详细地址" value="{{place}}" bindinput="placeInput" />
+					</view>
+				</view>
+			</block>
+			<view class="b_bar">
+				<view class="name">备注信息</view>
+				<view class="b_nobi">※必填</view>
+			</view>
+			<view class="b_notes">
+				<view class="b_text">
+					<textarea value="{{notes}}" bindinput="noteInput" maxlength="100" placeholder="请补充物品相关的信息，也可填写您的微信号"></textarea>
+					<view class="b_less">{{note_counts}}/100</view>
+				</view>
+			</view>
+			<view class="b_bar">
+				<view class="name">发布时长(天)</view>
+				<van-stepper bind:change="duraChange" value="{{dura}}" min="1" max="50" />
+			</view>
+			<view class="b_tips">
+				<text>* </text>此时长内您的发布信息将会展示给所有同学，超时后您只需去个人中心处擦亮即可再次展示</view>
+		</view>
+		<view class="b_publish" bindtap="check_pub">马上发布</view>
+	</view>
+</van-transition>
+<text class="font" space="ensp"> 如果你喜欢我们的小程序，支持我们一下，我们才有动力做出更好的功能</text>
+<ad unit-id="adunit-5fed763488239e91" ad-type="video" ad-theme="white"></ad>
+
+<!--步骤二-->
+<van-transition show="{{ show_c }}" name="fade-right" custom-class="block" duration="{{entime}}">
+	<view class="c_contain" style="height:{{systeminfo.windowHeight-66.8}}px">
+		<image class="c_success" src="/images/success.png"></image>
+		<view class="c_title">恭喜您 发布成功</view>
+		<view class="c_des">订单的实时状态请在我的主页查看</view>
+		<view class="c_see" bindtap="detail">查看详情</view>
+		<view class="c_again shadow" bindtap="initial">再来一个</view>
+	</view>
+	<ad unit-id="adunit-5fed763488239e91" ad-type="video" ad-theme="white"></ad>
+</van-transition>

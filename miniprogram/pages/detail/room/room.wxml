@@ -1,0 +1,15 @@
+
+<view class="container">
+
+<van-notice-bar left-icon="volume-o" text="可以在我的——消息中心处 拍一拍 提醒对方上线哦!" speed="30" />
+  <chatroom
+    style="width: 100%; height: 95%"
+    envId="{{chatRoomEnvId}}"
+    collection="{{chatRoomCollection}}"
+    groupId="{{chatRoomGroupId}}"
+    groupName="{{chatRoomGroupName}}"
+    userInfo="{{userInfo}}"
+    onGetUserInfo="{{osnGetUserInfo}}"
+    getOpenID="{{getOpenID}}"
+  ></chatroom>
+</view>

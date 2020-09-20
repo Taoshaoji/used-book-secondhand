@@ -1,0 +1,34 @@
+<!-- <view wx:if='{{!isExist}}'>
+	<image src='cloud://taoshaoji-46f0r.7461-taoshaoji-46f0r-1302243411/gzh/eg.jpeg' mode="aspectFit" class="image"></image>
+</view>
+<view wx:elif='{{isExist}}'>
+	<image src='{{bigImg}}' mode="aspectFit" class="image"></image>
+</view> -->
+<view class="space"></view>
+<view class='imagesize' wx:if='{{!isExist}}'>
+  <image src='cloud://taoshaoji-46f0r.7461-taoshaoji-46f0r-1302243411/gzh/eg.jpeg' class='in-image'/>
+</view>
+<view class='imagesize' wx:if='{{isExist}}'>
+  <image src='{{bigImg}}' class='in-image'/>
+</view>
+
+<view class="space"></view>
+<button class="btn" style="width:60vw" bindtap='changeBigImg' size="default">{{(!isExist)?"上传赞赏码":"修改赞赏码"}}</button>
+
+
+<view class="contain">
+	<view class="title"><image class="about" src="/images/about.png" />上传申明</view>
+	<view class="title">1、为什么要上传赞赏码？</view>
+	<view class="description">
+		<text space="emsp" decode="{{ true }}">因为微信小程序中无法识别收款码或者提供其它财产交易方式，所以我们采用小程序能够识别的赞赏码来进行付款交易</text>
+	</view>
+	<view class="title">2、如何获取付款码？</view>
+	<view class="description">
+		<text space="emsp" decode="{{ true }}">用户可以在微信中我的-支付-钱包中的收付款页面下方选项-赞赏码获取，然后保存赞赏码上传到本小程序中，便可实现在线交易。后续我们会努力拿到微信支付的接口权限，简化交易过程。</text>
+	</view>
+	<view class="title"><image class="about" src="/images/about.png" />作者声明</view>
+	<view class="description">
+		<text space="emsp" decode="{{ true }}">赞赏码的用途和收款码类似。只能用于收款，用户不用担心会因此产生不必要的财产损失。我们会将赞赏码附加于订单详情页，买家可以通过扫描赞赏码向卖家进行费用支付。\nTip:如果卖家不想上传赞赏码，可以在线下和买家进行沟通，面对面扫一扫交易也可。</text>
+	</view>
+	<view class="space"></view>
+</view>

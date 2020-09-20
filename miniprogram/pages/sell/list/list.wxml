@@ -1,0 +1,48 @@
+<wxs src="../../../common.wxs" module="morejs" />
+<view class="contain" wx:if="{{list.length!==0}}">
+      <block wx:for="{{list}}" wx:key="_id">
+            <view class="card" bindtap="detail" data-detail="{{item}}">
+                  <view class="a">
+                        <view class="a1 {{item.status==1?'text-red':''}}">
+                              <image lazy-load src="/images/onsell.png"></image>
+                              {{item.status==0?'待出售':(item.status==1||item.status==5?'交易中':(item.status==2?'已完成':'已取消'))}}
+                        </view>
+                        <view class="a2">{{morejs.timelog(item.creat)}}</view>
+                  </view>
+                  <view class="b">
+                        <image lazy-load src="{{item.bookinfo.pic[0]}}"></image>
+                        <view class="b1">
+                              <view class="b11">
+                                    <view class="b111 text-cut">{{item.bookinfo.good}}</view>
+                              </view>
+                              <view class="b12">￥{{item.price}}元</view>
+                        </view>
+                  </view>
+                  <view class="c">
+                        <view class="c1 bg-grey" catchtap="del" data-del="{{item}}" wx:if="{{item.status!=1 && item.status!=5}}">删除</view>
+                        <view class="c1 bg-green" catchtap="up" data-up="{{item}}" wx:if="{{item.status==3}}">重新上架</view>
+                        <view class="c2 bg-red" wx:if="{{item.status==5||item.status==1}}" catchtap="quxiao" data-quxiao="{{item}}">取消交易</view>
+                        <view class="c2 bg-green" wx:if="{{item.status==5||item.status==1}}" catchtap="wancheng" data-wancheng="{{item}}">完成交易</view>
+                        <view class="c1 bg-yellow" wx:if="{{item.status==0}}" catchtap="crash" data-crash="{{item}}">擦亮</view>
+                  </view>
+            </view>
+      </block>
+      
+</view>
+
+<!--无内容显示-->
+<view class="nocontent" wx:if="{{list.length==0}}">
+      <image src="/images/blank.png"></image>
+      <view class="blank_text">这里空空如也~</view>
+</view>
+
+
+<block wx:if="{{list.length>10}}">
+      <import src="/common.wxml" />
+      <template is="loadmore" data="{{nomore}}" />
+</block>
+<van-transition show="{{ scrollTop>500 }}" custom-class="block" duration="600">
+      <view class="totop" bindtap="gotop">
+            <image src="/images/top.png"></image>
+      </view>
+</van-transition>

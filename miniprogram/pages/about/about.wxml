@@ -1,0 +1,34 @@
+<view class="title">开发：</view>
+<view class="main">
+	<view class="image">
+		<view class="txt" wx:for="{{imgs1}}" wx:key="{{index}}">
+			<image class="im" src="{{item.url}}" data-id="{{index}}"></image>
+			<view class="t">
+				{{item.name}}
+			</view>
+		</view>
+	</view>
+</view>
+<view class="contain">
+	<view class="title">程序简介</view>
+	<view class="description">
+		<text space="emsp" decode="{{ true }}">{{des}}</text>
+	</view>
+	<view class="title">打赏我们</view>
+	<view class="description">
+		<view class='imagesize'>
+			<image src="https://7461-taoshaoji-46f0r-1302243411.tcb.qcloud.la/appreciate-code/appreciateimg.jpg?sign=7a94d719f891a5b8838fae33a1b79d22&t=1597422871" class='in-image' bindtap="img" />
+		</view>
+	</view>
+	<view class="title">联系方式</view>
+	<view class="description">
+		<view class="tip" bindtap="copy" data-copy="拈花我把酒" data-name="微信公众号">
+			<view>公众号</view>:
+			<text>拈花我把酒</text>
+		</view>
+		<view class="tip" bindtap="copy" data-copy="859162716" data-name="QQ群">
+			<view>QQ群</view>:
+			<text>859162716</text>
+		</view>
+	</view>
+</view>

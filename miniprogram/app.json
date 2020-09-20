@@ -1,0 +1,75 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/publish/publish",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/order/list/list",
+    "pages/order/detail/detail",
+    "pages/kefu/kefu",
+    "pages/about/about",
+    "pages/sell/list/list",
+    "pages/sell/detail/detail",
+    "pages/search/search",
+    "pages/edit/edit",
+    "pages/web/web",
+    "pages/message/message",
+    "pages/detail/room/room",
+    "pages/use/use",
+    "pages/help/help",
+    "pages/appreciateCode/appreciateCode"
+  ],
+  "window": {
+    "backgroundColor": "#fbbd08",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fbbd08",
+    "navigationBarTitleText": "吉珠二手交易平台",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#000000",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabbar/home.png",
+        "selectedIconPath": "/images/tabbar/home_on.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "/images/tabbar/publish.png",
+        "selectedIconPath": "/images/tabbar/publish_on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/tabbar/my.png",
+        "selectedIconPath": "/images/tabbar/my_on.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-steps": "/vant/steps/index",
+    "van-transition": "/vant/transition/index",
+    "van-stepper": "/vant/stepper/index",
+    "van-action-sheet": "/vant/action-sheet/index",
+    "van-popup": "/vant/popup/index",
+    "canvasdrawer": "/components/canvasdrawer/canvasdrawer",
+    "tips": "components/add_tips/index",
+    "welcome": "components/welcome/welcome",
+    "van-dialog": "/vant/dialog/index",
+    "van-button": "/vant/button/index",
+    "van-picker": "/vant/picker/index",
+    "van-icon": "/vant/icon/index",
+    "van-uploader": "/vant/uploader/index",
+    "van-checkbox": "/vant/checkbox/index",
+    "van-checkbox-group": "/vant/checkbox-group/index",
+    "van-divider": "/vant/divider/index",
+    "van-notice-bar": "vant/notice-bar/index"
+  }
+}

@@ -1,0 +1,96 @@
+<wxs src="../../common.wxs" module="morejs" />
+<view class="top_contain">
+      <!--轮播图-->
+      <swiper indicator-dots='true' autoplay='true' interval='5000' duration='500' circular="true" >
+            <block wx:for="{{publishinfo.bookinfo.imgs}}" wx:key="index">
+                  <swiper-item class="image">
+                        <image src='{{item}}' mode="scaleToFill" bindtap="img" data-src="{{item}}"></image>
+                  </swiper-item>
+            </block>
+      </swiper>
+      
+      <view class="title text-cut">{{publishinfo.bookinfo.good}}</view>
+      <view class="price_box">
+            <view class="now_price">￥{{publishinfo.price}}元</view>
+      </view>
+</view>
+<view class="blank"></view>
+<view class="center_contain">
+      <view bindtap="changeTitle" data-id="{{ true }}" class="c_title {{first_title?'title_on':''}}">发布信息</view>
+      <view bindtap="changeTitle" data-id="{{ false }}" class="c_title {{first_title?'':'title_on'}}">物品详情</view>
+</view>
+<!--发布信息-->
+<view hidden="{{!first_title}}">
+      <view class="user_box">
+            <image lazy-load src="{{userinfo.info.avatarUrl}}"></image>
+            <view class="des_box">
+                  <view class="user_name">{{userinfo.info.nickName}}</view>
+                  <view class="local_box">
+                        <image src="/images/local.png"></image>
+                        <view>{{userinfo.campus.name}}</view>
+                  </view>
+            </view>
+            <view class="sex">
+                  <image lazy-load src="{{userinfo.info.gender==0?'/images/none.png':(userinfo.info.gender==1?'/images/boy.png':'/images/girl.png')}}"></image>
+            </view>
+      </view>
+      <view class="time_box">
+            <view class="kind">{{collegeName.name}}类物品</view>
+            <view class="time">发布于{{morejs.timelog(publishinfo.creat)}}</view>
+      </view>
+      <view class="deliver_box">
+            <view class="deliver_first">
+                  <view class="deliver_title">取货方式：</view>
+                  <view class="deliver_kind">{{publishinfo.deliveryid==0?'自提':'帮送'}}</view>
+            </view>
+            <view class="deliver_place">{{publishinfo.place}}</view>
+      </view>
+      <view class="palceInput_box" wx:if="{{publishinfo.deliveryid==1}}">
+            <input bindinput="placeInput" placeholder="卖家可以帮送，请填写您的收货地址"></input>
+      </view>
+      <view class="notes_box" wx:if="{{publishinfo.notes!==''}}">
+            <view class="notes">
+                  <view class="notes_text">备注信息:</view>
+                  <text class="notes_text" selectable="true">{{publishinfo.notes}}</text>
+            </view>
+      </view>
+
+</view>
+<!--物品详情-->
+<view hidden="{{first_title}}">
+      <view class="detail_contain">
+            <view class="detail_card">
+                  <view class="detail_title">物品描述</view>
+                  <view class="detail_content">{{publishinfo.bookinfo.describe}}</view>
+            </view>
+            <!--物品详情预览-->
+            <block class="image" wx:for="{{publishinfo.bookinfo.imgs}}" wx:key="index">
+                  <view>
+                        <!-- <image class='img' src='{{item}}' data-index='index' bindtap='previewImg'></image>-->
+                        <image src="{{item}}" mode="scaleToFill" bindtap="img" data-src="{{item}}"></image>
+                  </view>
+            </block>
+      </view>
+</view>
+<view style="height: 96rpx;"></view>
+<!--底部导航-->
+<view class="tabbar">
+      <view class="t_card">
+            <image src="/images/home.png"></image>
+            <text>首页</text>
+            <button class="t_button" bindtap="home"></button>
+      </view>
+      <view class="t_card" bindtap="my">
+            <image src="/images/tabbar/my.png"></image>
+            <text>我的</text>
+      </view>
+      <view class="buy_box">
+            <view class="buy shadow" bindtap="buy">{{publishinfo.status==0?'立即购买':(publishinfo.status==1?'刚刚被抢光了':(publishinfo.status==2?'已出售':'已下架'))}}</view>
+      </view>
+</view>
+
+<!--悬浮聊天功能-->
+<view class="contact_box" bindtap="goo" data-id="{{roomID}}" >
+     <image src="/images/chat.png" ></image>
+     <view>私聊</view>
+</view>

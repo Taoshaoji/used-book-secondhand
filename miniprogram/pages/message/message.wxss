@@ -1,0 +1,88 @@
+.list {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 30rpx;
+    }
+    
+    .item {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      box-sizing: border-box;
+      margin-bottom: 35rpx;
+      width: 100%;
+      height: 160rpx;
+      border-radius: 20rpx;
+      box-shadow: 0rpx 0rpx 10rpx rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    
+    .left {
+      height: 100%;
+      width: 220rpx;
+    }
+    
+    .left image {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .middle {
+      padding: 20rpx 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: 20rpx;
+      flex: 3;
+    }
+    
+    .middle view {
+      margin: 5rpx 0;
+    }
+    
+    .title {
+      font-size: 30rpx;
+      font-weight: 600;
+      width: 100%;
+    }
+    
+    .date {
+      width: 100%;
+      color: #bbb;
+      font-size: 24rpx;
+    }
+    
+    .desc {
+      width: 100%;
+      color: #000;
+      font-size: 24rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+    
+    button.btn {
+      padding: 0;
+      margin-right: 30rpx;
+      width: 100rpx;
+      height: 55rpx;
+      line-height: 55rpx;
+      text-align: center;
+      font-size: 24rpx;
+      font-weight: 600;
+      background-color: #fdb92c;
+      border-radius: 6rpx;
+    }
+    
+    button.btn::after {
+      border: none;
+    }

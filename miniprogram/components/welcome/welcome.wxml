@@ -1,0 +1,24 @@
+
+<!-- modal -->
+<view class='modal' wx:if="{{SHOW_MODAL}}">
+  <view style='flex-direction: row;align-items:center;'>
+    <text class="font">1. 欢迎来到 易珠 小程序，感谢您的使用，我们会继续努力完善本小程序</text>
+    <!-- <image src='./assets/fav-1.jpg' style='width:100px' mode="widthFix"></image> -->
+  </view>
+  <view>
+    <text class="font">2.同学们使用前可在（我的—用户手册） 页面查看小程序使用详情 </text>
+    <!-- <image src='./assets/fav-2.jpg' style='width:100%' mode="widthFix"></image> -->
+  </view>
+  <view>
+    <text class="font">3. 关于为什么有广告出现问题，可在 （我的—使用说明） 页面处了解，感谢您的理解！</text>
+    <image src='./assets/ad_1.jpg' style='width:100%' mode="widthFix"></image>
+    <image src='./assets/about.jpg' style='width:100%' mode="widthFix"></image>
+  </view>
+
+  <!-- 知道了 -->
+  <view class='ok-btn' hover-class='btn-hover' bindtap='okHandler'>
+    <view>
+      <text>现在去康康>></text>
+    </view>
+  </view>
+</view>
