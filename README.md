@@ -1,4 +1,4 @@
-# Secondary_trading_applet
+# Secondary-trading-in-school
 
 基于微信小程序的校园二手交易平台
 
@@ -20,23 +20,21 @@
 
 首先进入小程序进行登录授权，授权进入后，显示商城主页，当前为未登陆注册状态不能发布和购买商品。
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920220005803.png" alt="image-20200920220005803" style="zoom: 50%;" /> <img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920220722873.png" alt="image-20200920220722873" style="zoom:50%;" />
+![image](README.assets/RhiHTSOsG6aLK2D.png) ![image-2020092022000580![image-20200920221729375](README.assets/image-20200920221729375.png)3](填写信息，注册或登录账号，登录注册成功，个人主页显示用户微信头像及昵称
 
-点击下方导航栏‘我的’进入个人主页，点击**登录**，填写信息，注册或登录账号，登录注册成功，个人主页显示用户微信头像及昵称
-
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920220841085.png" alt="image-20200920220841085" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920220948222.png" alt="image-20200920220948222" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920220841085.png" alt="image-20200920220841085" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920220948222.png" alt="image-20200920220948222" style="zoom:50%;" />
 
 
 
 用户想要**出售商品**，可在商城主页导航栏点击‘发布’，填写信息发布商品，在个人主页我的发布中查看出售情况，如不想出售也可在我的发布处点击删除，商品下架。
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920221442425.png" alt="image-20200920221442425" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920221738182.png" alt="image-20200920221738182" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920221751633.png" alt="image-20200920221751633" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920221442425.png" alt="image-20200920221442425" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920221738182.png" alt="image-20200920221738182" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920221751633.png" alt="image-20200920221751633" style="zoom:50%;" />
 
 
 
 用户想要**入手商品**，可回到商城首页，分类浏览商品，也可以通过上方搜索栏搜索商品，用户可以点击商品，进入商品详情页，查看物品详情，卖家信息，备注等等
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920221852958.png" alt="image-20200920221852958" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920221938299.png" alt="image-20200920221938299" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222108667.png" alt="image-20200920222108667" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920221852958.png" alt="image-20200920221852958" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920221938299.png" alt="image-20200920221938299" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222108667.png" alt="image-20200920222108667" style="zoom:50%;" />
 
 
 
@@ -46,7 +44,7 @@
 
 买家购买商品后，如在线下收到商品，则可以通过确认收货通知卖家
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222151402.png" alt="image-20200920222151402" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222300547.png" alt="image-20200920222300547" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222352110.png" alt="image-20200920222352110" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222151402.png" alt="image-20200920222151402" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222300547.png" alt="image-20200920222300547" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222352110.png" alt="image-20200920222352110" style="zoom:50%;" />
 
 
 
@@ -54,23 +52,23 @@
 
 买家可以点击取消订单按钮中途取消交易，卖家会收到消息提醒。商品会自动上架。
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222529192.png" alt="image-20200920222529192" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222529192.png" alt="image-20200920222529192" style="zoom:50%;" />
 
 3.卖家中止交易：
 
 卖家可中途中止交易。然后点击重新上架按钮，重新发布到首页展示。
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222737231.png" alt="image-20200920222737231" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222748670.png" alt="image-20200920222748670" style="zoom:50%;" /><img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222804302.png" alt="image-20200920222804302" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222737231.png" alt="image-20200920222737231" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222748670.png" alt="image-20200920222748670" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222804302.png" alt="image-20200920222804302" style="zoom:50%;" />
 
 
 
 买家可在商品详情页点击‘聊天’与卖家沟通
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920222934149.png" alt="image-20200920222934149" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920222934149.png" alt="image-20200920222934149" style="zoom:50%;" />
 
 卖家可在个人主页消息中心中，看到买家的信息，进入聊天室与之交流。
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920223013113.png" alt="image-20200920223013113" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920223013113.png" alt="image-20200920223013113" style="zoom: 50%;" />
 
 
 
@@ -78,9 +76,11 @@
 
 ### 部署教程：
 
+下载代码前请花点时间点点start谢谢支持！！！
+
 本小程序已经上线，可先预览：
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920223554236.png" alt="image-20200920223554236" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920223554236.png" alt="image-20200920223554236" style="zoom:50%;" />
 
 
 
@@ -102,7 +102,7 @@
 
 找到config.js文件，然后按照我写的注释更改为你自己的
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920223633305.png" alt="image-20200920223633305" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920223633305.png" alt="image-20200920223633305" style="zoom:67%;" />
 
 ## 二、云函数
 
@@ -110,7 +110,7 @@
 
 每个云函数要修改的部分，我都捻出来放在了顶部，直接根据我做的注释信息进行修改，如下图所示
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920223729148.png" alt="image-20200920223729148" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920223729148.png" alt="image-20200920223729148" style="zoom:67%;" />
 
 
 
@@ -118,7 +118,7 @@
 
 挨个提交每个云函数，其中依赖包我已经一起上传了，无需再挨个本地去安装，直接上传所有文件即可
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920223930768.png" alt="image-20200920223930768" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920223930768.png" alt="image-20200920223930768" style="zoom:67%;" />
 
 
 
@@ -128,7 +128,7 @@
 
 分别创建下图所示的集合，然后将所有集合的权限设置为所有可读
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920224111392.png" alt="image-20200920224111392" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920224111392.png" alt="image-20200920224111392" style="zoom:67%;" />
 
 ### 2、设置banner
 
@@ -136,7 +136,7 @@
 
 #### ②按照下图所示添加字段
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920224159506.png" alt="image-20200920224159506" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920224159506.png" alt="image-20200920224159506" style="zoom:67%;" />
 
 #### 补充说明
 
@@ -150,7 +150,7 @@ list数组下的img为图片地址，id为唯一区分字段，url为点击轮�
 
 #### ②按照下图所示添加字段
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920224235782.png" alt="image-20200920224235782" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920224235782.png" alt="image-20200920224235782" style="zoom: 67%;" />
 
 
 
@@ -171,7 +171,7 @@ list数组下的img为图片地址，id为唯一区分字段，url为点击轮�
 
 打开【设置】--【客服】--【添加】，绑定成功后，打开小程序【客服小助手】，状态设置为在线即可，到时候有客户咨询自动会推送到你的微信号上的
 
-<img src="C:\Users\38081\AppData\Roaming\Typora\typora-user-images\image-20200920224525938.png" alt="image-20200920224525938" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Taoshaoji/pic/master/image-20200920224525938.png" alt="image-20200920224525938" style="zoom:50%;" />
 
 
 
@@ -181,3 +181,4 @@ list数组下的img为图片地址，id为唯一区分字段，url为点击轮�
 
 #### 如果需要提供安装服务，直接联系我微信：ttao527
 
+# CloudIMG
