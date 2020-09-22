@@ -21,8 +21,6 @@ Page({
       openid: app.openid,
       roomlist: app.roomlist
     })
-    this.findtime();
-    var test = setTimeout(this.timesort, "1000");
     if (!app.openid) {
       wx.showModal({
         title: '温馨提示',
@@ -36,6 +34,32 @@ Page({
         }
       })
       return false
+    }
+    console.log("输出列表用户信息")
+    wx.cloud.init({
+      env: 'taoshaoji-46f0r',
+      traceUser: true
+    });
+    //初始化数据库
+    const db = wx.cloud.database();
+    var list = this.data.roomlist;
+    var that = this;
+    console.log(list);
+    for (var i = 0; i < list.length; i++) {
+      (function (i) {
+        db.collection('user').where({
+          _openid: list[i].openid
+        }).get().then(res => {
+          console.log(res.data[0]);
+          list[i].image = res.data[0].info.avatarUrl;
+          list[i].name = res.data[0].info.nickName;
+          //list[i].name = res.data[0]._id;
+          that.setData({
+            roomlist: list
+          })
+          console.log(list);
+        })
+      })(i);
     }
   },
   /*
@@ -123,7 +147,7 @@ Page({
               wx.showToast({
                 title: '删除成功',
               })
-              that.onShow()
+              wx.startPullDownRefresh()
 
             },
             fail: err => {
@@ -200,32 +224,6 @@ Page({
   },
   onShow() {
     this.init_charList()
-    console.log("2222222222222222222222222222222")
-    wx.cloud.init({
-      env: 'taoshaoji-46f0r',
-      traceUser: true
-    });
-    //初始化数据库
-    const db = wx.cloud.database();
-    var list = this.data.roomlist;
-    var that = this;
-    console.log(list);
-    for (var i = 0; i < list.length; i++) {
-      (function (i) {
-        db.collection('user').where({
-          _openid: list[i].openid
-        }).get().then(res => {
-          console.log(res.data[0]);
-          list[i].image = res.data[0].info.avatarUrl;
-          list[i].name = res.data[0].info.nickName;
-          //list[i].name = res.data[0]._id;
-          that.setData({
-            roomlist: list
-          })
-          console.log(list);
-        })
-      })(i);
-    }
   },
   //下拉刷新
   onPullDownRefresh() {

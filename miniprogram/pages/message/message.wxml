@@ -1,15 +1,3 @@
-<!-- miniprogram/pages/message/message.wxml
-<view class="container">
-	<view class="bottom_box" wx:for="{{roomlist}}">
-		<view class="bottom_card" bindtap="go" data-id="{{item.roomid}}" >
-			<view class="bottom_1">
-				<image src="{{item.image}}"></image>
-				<view>{{item.cha}}{{item.name}}</view>
-			</view>
-		</view>
-    <button bindtap="sendTip" data-opid="{{item.openid}}" class="btn" size="mini" type="warn" plain="true" >拍一拍</button>
-	</view>
-</view> -->
 <view class="list">
 	<view class="item" wx:for="{{roomlist}}">
 		<view class="left">

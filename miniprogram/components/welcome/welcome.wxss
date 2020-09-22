@@ -36,7 +36,7 @@
   font-weight: 400;
 }
 .font{
-  font-size: x-small;
+  size: 20px;
 }
 
 .modal {
@@ -46,8 +46,8 @@
   right: 0;
   bottom: 0;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  padding: 10px;
 }
 .modal > view {
   margin: 10px 0;
@@ -59,7 +59,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 5px;
-  color: #333;
+  color: rgb(7, 7, 7);
 }
 .modal > view > image {
   border-radius: 10px;
