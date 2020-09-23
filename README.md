@@ -20,7 +20,7 @@
 
 首先进入小程序进行登录授权，授权进入后，显示商城主页，当前为未登陆注册状态不能发布和购买商品。
 
-<img src="README.assets/image-20200920220005803.png" alt="image-20200920220005803" style="zoom: 50%;" /> <img src="README.assets/image-20200920220722873.png" alt="image-20200920220722873" style="zoom:50%;" />
+<img src="README.assets/image-20200920220005803.png" alt="image-20200920220005803" style="zoom: 50%;" /> <img src="https://github.com/Taoshaoji/CloudIMG/blob/master/image-20200920220722873.png" alt="image-20200920220722873" style="zoom:50%;" />
 
 点击下方导航栏‘我的’进入个人主页，点击**登录**，填写信息，注册或登录账号，登录注册成功，个人主页显示用户微信头像及昵称
 
